@@ -1,0 +1,32 @@
+<div>
+		<div class="gameStatus" >
+			{{gameStatusMessage}}
+		</div>
+    <div id="layout">
+      <div id="player1-mancala">
+        <mancala [stonecount]="0"></mancala>
+      </div>
+      <div class="board">
+        <div id="player1-pits">
+          <pit *ngFor="let pos of [0,1,2,3,4,5]"
+            [state]="pits[col*2]"
+            (click)="handleMove(col*2)"
+          >
+          </pit>
+        </div>
+        <br>
+        <div id="player2-pits">
+          <pit *ngFor="let pos of [0,1,2,3,4,5]"
+            [state]="pits[col+1*2]"
+            (click)="handleMove(col+1*2)"
+          >
+          </pit>
+        </div>
+      </div>
+      <div id="player2-mancala">
+        <mancala [stonecount]="0"></mancala>
+      </div>
+    </div>
+		<button class="restart" (click)="restartGame()">New Game</button>
+</div>
+	

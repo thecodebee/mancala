@@ -1,0 +1,17 @@
+.pit {
+  width:100px; height:100px;
+  display:inline-block;
+  position:relative;
+  margin:10px;
+  border-radius:100%;
+  background-color:white;
+  color: #000;
+  cursor:pointer;
+  p{
+    position:absolute;
+    top:50%;
+    width:100%;
+    transform:translate(0, -50%);
+    text-align:center;
+  }
+}
