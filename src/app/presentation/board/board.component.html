@@ -1,34 +1,39 @@
-<div class="layout">
-		<div class="gameStatus" >
-			{{gameStatusMessage}}
-		</div>
-    <div class="container">
-      <div class="mancala player1">
+<div class="gameStatus" >
+  {{gameStatusMessage}}
+</div>
+<div>
+    <div [fxLayout]="row" fxLayout.xs="column" fxFlex>
+      <div class="player1" fxFlex="1 3 20%" fxFlexOrder fxFlexOrder.xs="1" >
         <mancala [stonecount]="0"></mancala>
       </div>
-      <div class="board">
-        <div class="player1-pits">
-          <pit *ngFor="let pos of [0,1,2,3,4,5]"
-            [state]="pits[pos]"
-            (click)="handleMove(pos)"
-          >
-          </pit>
-        </div>
-        <br>
-        <div class="player2-pits">
-          <pit *ngFor="let pos of [6,7,8,9,10,11]"
-            [state]="pits[pos]"
-            (click)="handleMove(pos)"
-          >
-          </pit>
+      <div fxFlexOrder fxFlexOrder.xs="2" fxFlex="noshrink">
+        <div fxLayout="column" fxLayout.xs="row" fxFlex>
+          <div class="bay" fxFlex="6 1 50%" fxFlexOrder fxFlexOrder.xs="1">
+            <div class="player1-pits" fxLayout="row" fxLayout.xs="column" fxFlex fxLayoutAlign="space-around center">
+              <pit *ngFor="let pos of [0,1,2,3,4,5]"
+                [state]="pits[pos]"
+                (click)="handleMove(pos)"
+              >
+              </pit>
+            </div>
+          </div>
+        <!--<br>-->
+          <div class="bay" fxFlex="6 1 50%" fxFlexOrder fxFlexOrder.xs="2">
+            <div class="player2-pits" fxLayout="row" fxLayout.xs="column" fxFlex fxLayoutAlign="space-around center">
+              <pit *ngFor="let pos of [6,7,8,9,10,11]"
+                [state]="pits[pos]"
+                (click)="handleMove(pos)"
+              >
+              </pit>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="mancala player2">
+      <div class="player2" fxFlex="1 3 20%" fxFlexOrder fxFlexOrder.xs="3">
         <mancala [stonecount]="0"></mancala>
       </div>
-    </div>
-    <div class="playAction">
-      <button class="restart" (click)="restartGame()">New Game</button>
     </div>
 </div>
-	
+<div class="playAction">
+  <button class="restart" (click)="restartGame()">New Game</button>
+</div>

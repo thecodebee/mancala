@@ -1,11 +1,11 @@
-.mancala {
-  width:100px; height:224px;
-  position:relative;
-  margin:10px;
-  border-radius:40px;
+.mancala{
+  margin: 3px;
+  padding: 1px;
   background-color:white;
+  border-radius:40px;
+  height: 88%;
   p {
-    position:absolute;
+    position:relative;
     top:40%;
     width:100%;
     align-self: center;
