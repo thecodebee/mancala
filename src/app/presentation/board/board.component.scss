@@ -1,27 +1,63 @@
+.layout {
+display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  text-align: center;
+}
+
+.layout > * {
+  padding: 1px;
+  flex: 1 100%;
+}
+
+.playAction {
+  width: 100%;
+}
+
+.container {
+  display: flex;  
+}
+
+.mancala {
+  min-width: 100px;
+}
+
+.player1 {
+  background-color:grey;
+}
+
+.player2 {
+  background-color:brown;
+}
+
 .board {
-  display:inline-block;
+   min-width: 690px;
 }
 
-#player1-pits, #player2-pits {
-  display:inline-block;
-}
-
-#player1-pits {
+.player1-pits {
   background-color:grey;
 }
 
-#player2-pits {
+.player2-pits {
   background-color:brown;
 }
 
-#player1-mancala {
-  background-color:grey;
-  display:inline-block;
+@media all and (min-width: 600px) {
+  .mancala { flex: 1 auto; }
 }
 
-#player2-mancala {
-  background-color:brown;
-  display:inline-block;
+@media all and (min-width: 960px) {
+  .board    { flex: 3 0px; }
+  .player1 { order: 1; } 
+  .board    { order: 2; }
+  .player2 { order: 3; }
+  .playAction  { order: 4; }
 }
 
 .gameStatus {
@@ -44,6 +80,7 @@
   padding: 15px;
   width: 100%;
 }
+
 .restart:hover {
   background-color: #c1cdcd;
   cursor: pointer;

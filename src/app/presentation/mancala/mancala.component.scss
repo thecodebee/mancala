@@ -1,16 +1,14 @@
 .mancala {
   width:100px; height:224px;
-  display:inline-block;
   position:relative;
   margin:10px;
   border-radius:40px;
   background-color:white;
-  align-content: center;
-  p{
+  p {
     position:absolute;
-    top:50%;
+    top:40%;
     width:100%;
-    transform:translate(0, -50%);
-    text-align:center;
+    align-self: center;
+    transform:translate(0, -40%);
   }
 }
