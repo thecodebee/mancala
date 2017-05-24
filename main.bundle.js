@@ -340,7 +340,7 @@ exports = module.exports = __webpack_require__(17)();
 
 
 // module
-exports.push([module.i, ".pit {\n  width: 90px;\n  height: 90px;\n  display: inline-block;\n  position: relative;\n  margin: 10px;\n  border-radius: 100%;\n  background-color: white;\n  color: #000;\n  cursor: pointer; }\n  .pit p {\n    position: absolute;\n    top: 40%;\n    width: 100%;\n    -webkit-transform: translate(0, -60%);\n            transform: translate(0, -60%);\n    text-align: center; }\n", ""]);
+exports.push([module.i, ".pit {\n  width: 70px;\n  height: 70px;\n  display: inline-block;\n  position: relative;\n  margin: 4px;\n  border-radius: 100%;\n  background-color: white;\n  color: #000;\n  cursor: pointer; }\n  .pit p {\n    position: absolute;\n    top: 40%;\n    width: 100%;\n    -webkit-transform: translate(0, -60%);\n            transform: translate(0, -60%);\n    text-align: center; }\n", ""]);
 
 // exports
 
