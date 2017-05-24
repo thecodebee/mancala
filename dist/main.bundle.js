@@ -304,7 +304,7 @@ exports = module.exports = __webpack_require__(17)();
 
 
 // module
-exports.push([module.i, ".playAction {\n  width: 100%; }\n\n.player1, .player1-pits {\n  background-color: grey; }\n\n.player2, .player2-pits {\n  background-color: brown; }\n\n.gameStatus {\n  margin: 0px;\n  padding: 15px;\n  background-color: #34495e;\n  color: #fff;\n  font-size: 1.4em;\n  font-weight: bold; }\n\n.restart {\n  background-color: #34495e;\n  color: #fff;\n  border: 0px;\n  font-family: 'Dosis', Helvetica, sans-serif;\n  font-size: 1.4em;\n  font-weight: bold;\n  margin: 0px;\n  padding: 15px;\n  width: 100%; }\n\n.restart:hover {\n  background-color: #c1cdcd;\n  cursor: pointer; }\n", ""]);
+exports.push([module.i, ".playAction {\n  width: 100%; }\n\n.player1, .player1-pits {\n  background-color: grey; }\n\n.player2, .player2-pits {\n  background-color: brown; }\n\n.gameStatus {\n  margin: 0px;\n  padding: 6px;\n  background-color: #34495e;\n  color: #fff;\n  font-size: 1em;\n  font-weight: bold; }\n\n.restart {\n  background-color: #34495e;\n  color: #fff;\n  border: 0px;\n  font-family: 'Dosis', Helvetica, sans-serif;\n  font-size: 1em;\n  font-weight: bold;\n  margin: 0px;\n  padding: 6px;\n  width: 100%; }\n\n.restart:hover {\n  background-color: #c1cdcd;\n  cursor: pointer; }\n", ""]);
 
 // exports
 
@@ -371,7 +371,7 @@ module.exports = module.exports.toString();
 /***/ 187:
 /***/ (function(module, exports) {
 
-module.exports = "<div fxFlexFill fxLayout=\"column\">\n    <div class=\"wrapper\">\n      <div>\n        <h1>{{ title }}</h1>\n      </div>\n      <board></board>\n    </div>\n</div>"
+module.exports = "<div fxFlexFill fxLayout=\"column\">\n    <div class=\"wrapper\">\n        <h3>{{ title }}</h3>\n      <board></board>\n    </div>\n</div>"
 
 /***/ }),
 
